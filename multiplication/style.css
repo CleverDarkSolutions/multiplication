@@ -1,0 +1,601 @@
+body
+{
+  background:	white;
+  font-size: 30px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+  transition: all 1s ease-in-out;
+  height: 800px;
+  width: 800px;
+}
+
+.marginSet
+{
+  position: absolute;
+  left: 7vw;
+}
+
+.fullscreenButton
+{
+  background-image: url('daw.png');
+  background-size: cover;
+  border-radius: 14px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  position: absolute;
+  top: 400px;
+  left: 30px;
+
+}
+
+#randomMultiply
+{
+  font-size: 100px;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+.turnCounter
+{
+  font-size: 50px;
+  position: absolute;
+  left: -140px;
+  top: 200px;
+}
+
+.equalSign
+{
+  font-size: 100px;
+  top: 100px;
+  left: 500px;
+  position: absolute;
+}
+
+.answerGiven
+{
+  width: 456px;
+  height: 90px;
+  background: white;
+  color: black;
+  border: 5px solid black;
+  font-size: 80px;
+  position: absolute;
+  top: 120px;
+  left: 600px;
+}
+
+.numberPad
+{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 600px;
+  top: 240px;
+
+}
+
+.numberButton
+{
+  width: 140px;
+  height: 90px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+
+}
+
+.numberButton p
+{
+  position: relative;
+  bottom: 5px;
+  left: -5px;
+}
+
+.toggleButton
+{
+  background-image: url('images.png');
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 480px;
+  top: 570px;
+  border: 2px white solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.switchDigits
+{
+  background-image: url('switch.jpg');
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 480px;
+  top: 460px;
+  border: 2px white solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.startGame
+{
+  position: absolute;
+  left: 950px;
+  top: 550px;
+  font-size: 80px;
+  cursor: pointer;
+  width: 278px;
+  height: 130px;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.startGame p
+{
+  position: absolute;
+  top: -65px;
+  left: 40px;
+}
+
+.startGame:hover
+{
+  background-color: black;
+  color: #F0FFFF;
+}
+
+.questionHidden
+{
+  display: none;
+}
+
+.answerDecided
+{
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.timeBar
+{
+  border: 5px solid black;
+  background: white;
+  width: 450px;
+  height: 20px;
+  position: absolute;
+  left: 605px;
+  top: 50px;
+}
+
+.fillTimeBar
+{
+  background: black;
+  width: 0px;
+  height: 20px;
+}
+
+.mainContainer
+{
+  position: absolute;
+  top: 400px;
+  left: -200px;
+  text-align: center;
+}
+
+.studentName
+{
+  position: absolute;
+  left: 100px;
+  top: 119px;
+  width: 1200px;
+  height: 250px;
+  font-size: 80px;
+}
+
+.studentName input
+{
+  width: 800px;
+  height: 70px;
+  border-radius: 10px;
+
+  font-size: 80px;
+}
+
+.endScreen b
+{
+  position: absolute;
+  left: 20vw;
+}
+
+
+
+
+.themeChange
+{
+  width: 1200px;
+  height: 700px;
+  border-radius: 2px black solid;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.colourPreview
+{
+  position: absolute;
+  left: 400px;
+  top: 0px;
+  background: white;
+  width: 800px;
+  height: 440px;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+.numberPreview
+{
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  font-size: 80px;
+}
+
+.stickyColourPreview
+{
+  position: absolute;
+  color: white;
+  top: 0px;
+  left: 0px;
+  background: black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 400px;
+  height: 50px;
+  transition: all 1s ease-in-out;
+}
+.stickyColourPreview p
+{
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+
+.blackOnWhite
+{
+  background: white;
+  color: black;
+  width: 294px;
+  height: 50px;
+  margin-bottom: 15px;
+  border: 3px solid black;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.yellowOnBlack
+{
+  background: black;
+  border: 3px solid #FEF95D;
+  color: #FEF95D;
+  width: 294px;
+  height: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.blackOnBlue
+{
+  background: #747ffc;
+  border: 3px solid #4f35fc;
+  color: black;
+  width: 294px;
+  height: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.blackOnBlue p
+{
+  position: absolute;
+  top: 120px;
+  left: 35px;
+}
+
+.blackOnPeach
+{
+  background: #FFE4C4;
+  border: 3px solid #fcac62;
+  color: black;
+  width: 294px;
+  height: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.blueOnCream
+{
+  background: #FFF8DC;
+  color: 	#161eaf;
+  border: 3px solid #161eaf;
+  width: 294px;
+  height: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.showResults
+{
+  font-size: 70px;
+  width: 800px;
+  height: 500px;
+}
+
+.finalTable
+{
+  display: none;
+}
+
+.btnOne
+{
+  position:absolute; top: 250px; left: 190px;
+}
+
+.btnTwo
+{
+  position:absolute; top: 250px; left: 340px;
+}
+
+.btnThree
+{
+  position:absolute; top: 250px; left: 490px;
+}
+
+/* start of desktop styles */
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+
+}
+
+@media screen and (max-width: 1000px) {
+/* start of medium tablet styles */
+#studentInputName
+{
+  width: 400px;
+  position: absolute;
+  left: 380px;
+}
+.studentName
+{
+  position: absolute;
+  left: -100px;
+  top: 50px;
+  font-size: 50px;
+}
+
+
+.fullscreenButton
+{
+  background-image: url('daw.png');
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+
+.startGame
+{
+  width: 150px;
+  height: 70px;
+  position: absolute;
+  top: 505px;
+  left: 575px;
+  font-size: 50px;
+}
+
+.numberPreview
+{
+  font-size: 50px;
+  position: absolute;
+  left: 224px;
+}
+
+.blackOnWhite
+{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.yellowOnBlack
+{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.blackOnBlue
+{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.blackOnBlue p
+{
+  position: absolute;
+  top: 137px;
+  left: 2px;
+}
+
+.blackOnPeach
+{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.blueOnCream
+{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.colourPreview
+{
+  width: 520px;
+  height: 335px;
+  left: 180px;
+}
+
+.stickyColourPreview
+{
+  width: 270px;
+  font-size: 20px;
+  height: 40px;
+}
+
+.stickyColourPreview p
+{
+  position: absolute;
+  top: -11px;
+}
+
+.btnOne
+{
+  position:absolute; top: 170px; left: 28px;
+}
+
+.btnTwo
+{
+  position:absolute; top: 170px; left: 188px;
+}
+
+.btnThree
+{
+  position:absolute; top: 170px; left: 347px;
+}
+
+
+  .timeBar
+  {
+    position: absolute;
+    left: 120px;
+    top: 0px;
+  }
+
+  #randomMultiply
+  {
+    position: absolute;
+    top: 30px;
+    color: black;
+    left: 120px;
+
+  }
+
+  .equalSign
+  {
+    top: 30px;
+    left: 420px;
+    position: absolute;
+  }
+
+  .answerGiven
+  {
+    left: 120px;
+    top: 160px;
+  }
+
+  .toggleButton
+  {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 610px;
+    top: 510px;
+  }
+
+  .switchDigits
+  {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 610px;
+    top: 400px;
+  }
+
+  .numberPad
+  {
+    left: 120px;
+    top: 280px;
+  }
+
+
+  .turnCounter
+  {
+    position: absolute;
+    left: 500px;
+    top: 171px;
+  }
+
+  .marginSet
+  {
+    position: absolute;
+    left: 3vw;
+    transform: scale(0.8);
+  }
+
+  .endScreen b
+  {
+    position: absolute;
+    left: 25vw;
+  }
+
+  .endScreen p
+  {
+    position: absolute;
+    left: 5vw;
+  }
+
+  .blackOnBlue p
+  {
+    position: absolute;
+    top: 137px;
+    left: 4px;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+
+}

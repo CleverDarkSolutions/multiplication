@@ -1,0 +1,105 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  </head>
+  <body>
+    <div class="marginSet" id="marginSet">
+
+    <div class="endScreen" id="endScreen">
+      <div class="helpButton" id="helpButton"></div>
+      <div class="homeButton" id="homeButton"></div>
+
+      <div class="themeChange" id="themeChange">
+        <div class="themeTemplates">
+          <div class="blackOnWhite" onclick="changeThemeOne();">White and black</div>
+          <div class="yellowOnBlack" onclick="changeThemeTwo();">Yellow and black</div>
+          <div class="blackOnBlue" onclick="changeThemeThree();"><p>Black and blue</p></div>
+          <div class="blackOnPeach" onclick="changeThemeFour();">Black and peach</div>
+          <div class="blueOnCream" onclick="changeThemeFive();">Blue and cream</div>
+        </div>
+
+        <div class="colourPreview">
+            <div class="stickyColourPreview"><p>COLOUR PREVIEW</p></div>
+            <div class="numberPreview">123</div>
+
+            <div class="numberButton btnOne">1</div>
+            <div class="numberButton btnTwo">2</div>
+            <div class="numberButton btnThree">3</div>
+
+        </div>
+
+      </div>
+
+    <div class="mainContainer">
+      <div class="studentName" id="studentName"> Name <br>
+        <input type="text" name="studentName" id="studentInputName" value="">
+      </div>
+      </div>
+
+  <!------------------------------------------------------->
+
+
+      <div class="questionHidden" id="questionHidden">
+
+
+      <div class="questionSpace">
+
+        <div class="randomMultiply" id="randomMultiply"></div>
+        <div class="equalSign" id="equalSign">=</div>
+        <div class="answerGiven" id="answerGiven"></div>
+        <div class="timeBar" id="timeBar">
+          <div class="fillTimeBar" id="fillTimeBar"></div>
+          <div class="answerDecided" id="answerDecided"></div>
+        <div class="turnCounter" id="turnCounter"></div>
+
+        </div>
+        </div>
+
+
+
+
+
+
+      <div class="numberPad" id="numberPad">
+        <div class="numberButton" onclick="buttonReact(1);" id="numberOne" style="position: absolute; left: 0px;top: 0px;">1</div>
+        <div class="numberButton" onclick="buttonReact(2);" id="numberTwo" style="position: absolute; left: 160px;top: 0px;">2</div>
+        <div class="numberButton" onclick="buttonReact(3);" id="numberThree" style="position: absolute; left: 320px;top: 0px;">3</div>
+        <div class="numberButton" onclick="buttonReact(4);" id="numberFour" style="position: absolute; left: 0px;top: 110px;">4</div>
+        <div class="numberButton" onclick="buttonReact(5);" id="numberFive" style="position: absolute; left: 160px;top: 110px;">5</div>
+        <div class="numberButton" onclick="buttonReact(6);" id="numberSix" style="position: absolute; left: 320px;top: 110px;">6</div>
+        <div class="numberButton" onclick="buttonReact(7);" id="numberSeven"style="position: absolute; left: 0px;top: 220px;">7</div>
+        <div class="numberButton" onclick="buttonReact(8);" id="numberEight"style="position: absolute; left: 160px;top: 220px;">8</div>
+        <div class="numberButton" onclick="buttonReact(9);" id="numberNine"style="position: absolute; left: 320px;top: 220px;">9</div>
+        <div class="numberButton" onclick="buttonClear();"  id="numberClear"style="position: absolute; left: 0px;top: 330px; font-size: 30px;"><p> &nbsp; ⌫</p></div>
+        <div class="numberButton" onclick="buttonReact(0)"  id="numberZero"style="position: absolute; left: 160px;top: 330px;">0</div>
+        <div class="numberButton" onclick=""  id="buttonEnter" style="position: absolute; left: 320px;top: 330px; font-size: 30px"><p>Enter</p></div>
+      </div>
+      <div class="toggleButton" onclick="toggleNumbers();"></div>
+      <div class="switchDigits" id="switchDigits" onclick="switchDigits();"></div>
+      </div>
+    </div>
+      <div class="startGame" id="startGame" onclick="startGame();">Start</div>
+      <div class="fullscreenButton" id="fullscreenButton" onclick="openFullscreen();"></div>
+
+    </div>
+
+
+    <div class="finalTable" id="finalTable"></div>
+    </div>
+
+
+
+    </div>
+
+    </div>
+
+    <script src='jquery-3.3.1.min.js'></script>
+    <script src='script.js'></script>
+
+
+  </body>
+</html>
